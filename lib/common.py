@@ -17,9 +17,6 @@ from open_spiel.python.observation import make_observation
 import copy
 
 import numpy as np
-from tensorflow import keras
-import tensorflow as tf
-from tensorflow.keras import layers
 import matplotlib.pyplot as plt
 
 try:

@@ -12,7 +12,6 @@ import random
 import time
 from collections import defaultdict
 from typing import Dict
-import trout
 
 # other
 USE_TQDM = False
@@ -42,7 +41,7 @@ print('dl imports done')
 # local
 import os
 import sys
-module_path = os.path.abspath(os.path.join('../..'))
+module_path = os.path.abspath(os.path.join('../'))
 if module_path not in sys.path:
     sys.path.append(module_path)
 import lib.game_wrappers.observations_as_infostates

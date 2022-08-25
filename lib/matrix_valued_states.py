@@ -21,9 +21,9 @@ from open_spiel.python.algorithms import policy_aggregator
 from open_spiel.python.observation import make_observation
 
 import numpy as np
-from tensorflow import keras
-import tensorflow as tf
-from tensorflow.keras import layers
+# from tensorflow import keras
+# import tensorflow as tf
+# from tensorflow.keras import layers
 import matplotlib.pyplot as plt
 
 try:
@@ -33,7 +33,7 @@ except ImportError as e:
     print('{} -- (tqdm is a cosmetic-only progress bar) -- setting `tqdm` to the identity function instead'.format(e))
     tqdm = lambda x: x
 
-module_path = os.path.abspath(os.path.join('..'))
+module_path = os.path.abspath(os.path.join('.'))
 if module_path not in sys.path:
     sys.path.append(module_path)
 from . import subgame_solving
